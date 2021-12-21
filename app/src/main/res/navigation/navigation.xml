@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/addCandidateFragment">
+
+    <fragment
+        android:id="@+id/addCandidateFragment"
+        android:name="com.android.examen.ui.fragments.addcandidate.AddCandidateFragment"
+        android:label="AddCandidateFragment" >
+        <action
+            android:id="@+id/action_addCandidateFragment_to_seeCandidatesFragment"
+            app:destination="@id/seeCandidatesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeCandidatesFragment"
+        android:name="com.android.examen.ui.fragments.seecandidates.SeeCandidatesFragment"
+        android:label="fragment_see_candidates"
+        tools:layout="@layout/fragment_see_candidates" >
+        <action
+            android:id="@+id/action_seeCandidatesFragment_to_addCandidateFragment"
+            app:destination="@id/addCandidateFragment" />
+    </fragment>
+</navigation>

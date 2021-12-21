@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.addcandidate.AddCandidateFragment">
+
+
+        <EditText
+            android:id="@+id/editTextPersonName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPersonName"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <EditText
+            android:id="@+id/editTextEdat"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edat"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
+            app:layout_constraintVertical_bias="0.033" />
+
+        <TextView
+            android:id="@+id/sexeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe:"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/radioSexe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toEndOf="@+id/editTextEdat"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmailAddress"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioGroup
+            android:id="@+id/radioSexe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/editTextEdat"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
+            app:layout_constraintVertical_bias="0.093">
+
+            <RadioButton
+                android:id="@+id/Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Dona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dona"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Altres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altres"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/destiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destinació:"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/radioDesti"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextEdat"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmailAddress"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioGroup
+            android:id="@+id/radioDesti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextEdat"
+            app:layout_constraintVertical_bias="0.208">
+
+            <RadioButton
+                android:id="@+id/America"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amèrica"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Asia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Àsia"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Africa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Àfrica"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Europa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Europa"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/Oceania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oceania"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:text="Afegir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioDesti"
+            app:layout_constraintVertical_bias="1.0"
+            android:backgroundTint="#EAEAEA"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:text="Següent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.984"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioDesti"
+            app:layout_constraintVertical_bias="1.0"
+            android:backgroundTint="#EAEAEA"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/candidat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidat/a"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.845" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
