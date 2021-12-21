@@ -16,4 +16,8 @@ class SharedViewModel(
             dataSource.insert(candidat)
         }
     }
+
+    fun getAll(): List<Candidat> {
+        return dataSource.getAll()
+    }
 }

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Olame/AndroidStudioProjects/examen/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Olame/AndroidStudioProjects/examen/app/src/main/res/layout/candidate_cell_layout.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Olame/AndroidStudioProjects/examen/app/src/main/res/layout/fragment_add_candidate.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/Olame/AndroidStudioProjects/examen/app/src/main/res/layout/fragment_see_candidates.xml" value="0.11200000000000002" />
       </map>
